@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* 重置 .course-description 内部元素的样式，恢复默认值 */
+.course-description {
+  * {
+    all: revert;
+    max-width: 100vw;
+  }
+}
+html,
+body,
+#app {
+  @apply h-full;
+}
+
+body {
+  @apply m-0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+:root {
+  --bg-color: #f2f3f5;
+}
+
+/* 禁止双指缩放 */
+* {
+  touch-action: manipulation;
+}

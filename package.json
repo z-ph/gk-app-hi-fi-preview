@@ -1,0 +1,29 @@
+{
+  "name": "gk-app-hi-fi-preview",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 3010",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 3011",
+    "mock-server": "cd mock-server && node index.js",
+    "poc": "./scripts/start-poc.sh"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.6",
+    "@vitejs/plugin-react": "^4.3.4",
+    "antd-mobile": "^5.39.0",
+    "antd-mobile-icons": "^0.3.0",
+    "dayjs": "^1.11.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.0.6",
+    "vite": "^6.1.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6"
+}
